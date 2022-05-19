@@ -2,7 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // fetch("http://localhost:8080/user");
+  fetch("/user").then(response => {
+    // response.json().then(users => {
+    //   console.log(users); 
+    // });
+  });
 
   return (
     <div className="App">
@@ -11,7 +15,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        Teste - teste
+        Teste - teste 2
         <a
           className="App-link"
           href="https://reactjs.org"
